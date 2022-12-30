@@ -120,14 +120,18 @@ a {
 .chat-sidebar ul li {
 	color: var(--button-color);
 	font-weight: 450;
-	width: 90%;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
 	background-color: var(--light-color);
 	font-size: 1.2vw;
 	margin-bottom: 2%;
+	border-radius: 1em;
+	overflow-wrap: break-word;
 }
 .chat-sidebar ul {
 	width: 100%;
 	text-align: center;
+	padding-right: 10%;
 }
 .chat-form-container {
 	width: 80%;
@@ -143,29 +147,42 @@ a {
 	height: 90%;
 	overflow-y: scroll;
 	background-color: var(--light-color);
-	padding: 1vh;
+	padding: 1.5vw;
+	overflow-wrap: break-word;
 }
 .chat-messages .message {
-	margin-bottom: 15px;
+	margin-bottom: 1vh;
 	background-color: var(--light-color);
 	border-radius: 5px;
+	width: 100%;
 	overflow-wrap: break-word;
 }
 .chat-messages .message .meta {
 	font-size: 1vw;
 	font-weight: bold;
-	color: var(--button-color);
+	color: #001847;
 	opacity: 0.7;
-	margin-bottom: 7px;
+	margin-bottom: 0.5vh;
+	padding-left: .5em;
 }
 .chat-messages .message .meta span {
 	color: rgb(65, 65, 65);
 	font-size: 1vw;
+	padding-left: 0.5em;
+	font-weight: 300;
 }
 .message .text {
-	color: var(--success-color);
-	font-weight: 300;
+	color: #001847;
+	font-weight: 400;
 	font-size: 1vw;
+	background-color: #afe1f6;
+	width: fit-content;
+	padding: .5em;
+	border-radius: 2em;
+	overflow-wrap: break-word;
+}
+.message .text {
+	overflow-wrap: break-word;
 }
 .chat-form-container form {
 	display: flex;
@@ -181,7 +198,7 @@ a {
 	flex: 1;
 	padding-left: 1vw;
 	margin-left: 1vw;
-	
+	overflow-wrap: break-word;
 }
 #chat-form .btn {
 	cursor: pointer;
